@@ -27,7 +27,7 @@ namespace HackDay.Repository
         }
 
 
-        public async Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndTime(string date)
+        public async Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndDate()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, $"?date={_defaultDate}&{_defaultLocationOne}");
             var client = _clientFactory.CreateClient("street-level-all-crimes");

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HackDay.Repository;
+using HackDay.Repository.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +29,23 @@ namespace HackDay
             services.AddHttpClient();
 
             services.AddControllers();
+
+            services.AddHttpClient("street-level-all-crimes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelAllCrimesAPI"));
+            });
+
+            services.AddHttpClient("street-level-crimes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelCrimesByCategoryAPI"));
+            });
+
+            services.AddHttpClient("street-level-outcomes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelOutcomesAPI"));
+            });
+
+            services.AddScoped<IStreetLevelCrimesRepo, CallStreetLevelCrimeApiRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
