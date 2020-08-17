@@ -13,3 +13,6 @@ C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csproj.CopyComplete
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
