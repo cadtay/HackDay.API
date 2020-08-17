@@ -11,7 +11,7 @@ namespace HackDay.Repository.Interfaces
         // Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocation();
         Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndDate();
         // Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategory(string category);
-        // Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategoryAndTime(string category, string date);
+        Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategoryAndTime();
         Task<StreetLevelCrimes> GetStreetLevelCrimeById(int id);
         Task<StreetLevelCrimeCategories[]> GetStreetLevelCrimeCategories();
 

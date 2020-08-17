@@ -10,13 +10,13 @@ namespace HackDay.Repository
 {
     public class CallStreetLevelCrimeApiRepo : IStreetLevelCrimesRepo
     {
-        // Default Locations & Date
+        // Default Locations, Category & Date
         private readonly string _defaultLocationOne = "lat=52.267136&lng=-1.467522";
         private readonly string _defaultLocationTwo = "lat=51.8931874&lng=-2.1195963";
         private readonly string _defaultLocationThree = "lat=52.4131949=lng-1.7247352";
         private readonly string _defaultLocationFour = "#";
         private readonly string _defaultDate = "2020-06";
-
+        private readonly string _defaultCategory = "burglary";
         /******************************************************************************/
         private IHttpClientFactory _clientFactory;
         private StreetLevelCrimes[] _streetLevelCrimes;
@@ -27,6 +27,26 @@ namespace HackDay.Repository
             _clientFactory = clientFactory;
         }
 
+        public async Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategoryAndTime()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"?{_defaultCategory}&date={_defaultDate}&{_defaultLocationOne}");
+            var client = _clientFactory.CreateClient("street-level-crimes");
+            HttpResponseMessage resp = await client.SendAsync(request);
+
+            // https://data.police.uk/api/burglary?date=2011-08
+
+            if (resp.IsSuccessStatusCode)
+            {
+                var jsonString = await resp.Content.ReadAsStringAsync();
+                _streetLevelCrimes = System.Text.Json.JsonSerializer.Deserialize<StreetLevelCrimes[]>(jsonString);
+
+                return _streetLevelCrimes;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         public async Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndDate()
         {
@@ -71,6 +91,8 @@ namespace HackDay.Repository
                 return null;
             }
         }
+
+
 
         public async Task<StreetLevelCrimeCategories[]> GetStreetLevelCrimeCategories()
         {

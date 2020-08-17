@@ -36,5 +36,20 @@ namespace HackDay.Controllers
 
             return NotFound();
         }
+
+        [HttpGet]
+        [Route("FilterByCategoryAndDate")]
+        // http://localhost:5000/api/StreetCrimes/StreetCrimesFilter/FilterByCategoryAndDate
+        public async Task<ActionResult<StreetLevelCrimes[]>> GetStreetCrimesByLocationAndCategoryAndTime()
+        {
+           var streetLevelResultByDateAndCategory = await _crimesRepo.GetAllStreetLevelCrimesByLocationAndCategoryAndTime();
+
+            if (streetLevelResultByDateAndCategory != null)
+            {
+                return Ok(streetLevelResultByDateAndCategory);
+            }
+
+            return NotFound();
+        } 
     }
 }
