@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nouriach\\Source\\Repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj": {}
+    "C:\\Users\\nouriach\\source\\repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nouriach\\Source\\Repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj": {
+    "C:\\Users\\nouriach\\source\\repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nouriach\\Source\\Repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj",
+        "projectUniqueName": "C:\\Users\\nouriach\\source\\repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj",
         "projectName": "HackDay",
-        "projectPath": "C:\\Users\\nouriach\\Source\\Repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj",
+        "projectPath": "C:\\Users\\nouriach\\source\\repos\\HackDay.API\\HackDay\\HackDay\\HackDay.csproj",
         "packagesPath": "C:\\Users\\nouriach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nouriach\\Source\\Repos\\HackDay.API\\HackDay\\HackDay\\obj\\",
+        "outputPath": "C:\\Users\\nouriach\\source\\repos\\HackDay.API\\HackDay\\HackDay\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -52,6 +52,10 @@
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
