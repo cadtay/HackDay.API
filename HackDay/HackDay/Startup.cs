@@ -30,6 +30,28 @@ namespace HackDay
 
             services.AddControllers();
 
+            services.AddHttpClient("street-level-all-crimes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelAllCrimesAPI"));
+            });
+
+            services.AddHttpClient("street-level-crimes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelCrimesByCategoryAPI"));
+            });
+
+            services.AddHttpClient("street-level-outcomes", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelOutcomesAPI"));
+            });
+
+            services.AddHttpClient("street-level-crime-categories", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelCrimeCategoriesAPI"));
+            });
+
+            services.AddScoped<IStreetLevelCrimesRepo, CallStreetLevelCrimeApiRepo>();
+          
             services.AddScoped<IFloodRepository, FloodRepository>();
         }
 
