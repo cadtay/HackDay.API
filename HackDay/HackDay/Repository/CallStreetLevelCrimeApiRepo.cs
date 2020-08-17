@@ -20,6 +20,7 @@ namespace HackDay.Repository
         /******************************************************************************/
         private IHttpClientFactory _clientFactory;
         private StreetLevelCrimes[] _streetLevelCrimes;
+        private StreetLevelCrimeCategories[] _streetLevelCrimeCategories;
 
         public CallStreetLevelCrimeApiRepo(IHttpClientFactory clientFactory)
         {
@@ -64,6 +65,25 @@ namespace HackDay.Repository
                     }
                 }
                 return null;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<StreetLevelCrimeCategories[]> GetStreetLevelCrimeCategories()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, "?");
+            var client = _clientFactory.CreateClient("street-level-crime-categories");
+            HttpResponseMessage resp = await client.SendAsync(request);
+
+            if (resp.IsSuccessStatusCode)
+            {
+                var jsonString = await resp.Content.ReadAsStringAsync();
+                _streetLevelCrimeCategories = System.Text.Json.JsonSerializer.Deserialize<StreetLevelCrimeCategories[]>(jsonString);
+
+                return _streetLevelCrimeCategories;
             }
             else
             {

@@ -45,6 +45,11 @@ namespace HackDay
                 slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelOutcomesAPI"));
             });
 
+            services.AddHttpClient("street-level-crime-categories", slc =>
+            {
+                slc.BaseAddress = new Uri(Configuration.GetValue<string>("StreetLevelCrimeCategoriesAPI"));
+            });
+
             services.AddScoped<IStreetLevelCrimesRepo, CallStreetLevelCrimeApiRepo>();
         }
 

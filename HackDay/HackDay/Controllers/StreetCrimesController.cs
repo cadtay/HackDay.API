@@ -24,6 +24,11 @@ namespace HackDay.Controllers
             return View();
         }
 
+        /***
+         * The below Method returns all of the crimes for a specific area for July 2020.
+         * a 'date' argument can be quickly added (YYY-MM) to change it.
+         ***/
+
         // GET api/streetcrime/GetStreetCrimeByLocationAndDefaultDate/{date}
         [HttpGet]
         [Route("GetStreetCrimeByLocationAndDefaultDate")]
@@ -34,6 +39,22 @@ namespace HackDay.Controllers
             if (streetLevelResultsByDate != null)
             {
                 return Ok(streetLevelResultsByDate);
+            }
+
+            return NotFound();
+        }
+
+        // -- GET api/streetcrime/GetStreetCrimeById/{id}
+        [HttpGet]
+        [Route("GetStreetCrimeById/{id}")]
+        public async Task<ActionResult<StreetLevelCrimes>> GetStreetCrimeById(int id)
+        {
+            // PLACEHOLDER ID: 84752354, this works in Postman
+            var streetLevelResult = await _crimesRepo.GetStreetLevelCrimeById(id);
+
+            if (streetLevelResult != null)
+            {
+                return Ok(streetLevelResult);
             }
 
             return NotFound();

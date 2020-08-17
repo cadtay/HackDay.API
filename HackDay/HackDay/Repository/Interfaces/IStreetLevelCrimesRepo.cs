@@ -13,7 +13,7 @@ namespace HackDay.Repository.Interfaces
         // Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategory(string category);
         // Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndCategoryAndTime(string category, string date);
         Task<StreetLevelCrimes> GetStreetLevelCrimeById(int id);
+        Task<StreetLevelCrimeCategories[]> GetStreetLevelCrimeCategories();
 
-        // LOCATIO
     }
 }
