@@ -114,3 +114,13 @@ C:\Users\nouriach\source\repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3
 C:\Users\nouriach\source\repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\nouriach\source\repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\nouriach\source\repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.deps.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.runtimeconfig.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.runtimeconfig.dev.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.pdb
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csproj.CoreCompileInputs.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.dll
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.pdb
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.genruntimeconfig.cache
