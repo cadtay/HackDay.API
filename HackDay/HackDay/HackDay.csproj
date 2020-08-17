@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Modals\" />
     <Folder Include="Repository\Interfaces\" />
   </ItemGroup>
