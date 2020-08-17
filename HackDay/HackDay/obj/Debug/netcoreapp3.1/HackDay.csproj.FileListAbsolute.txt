@@ -16,3 +16,13 @@ C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csproj.Copy
 C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.deps.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.runtimeconfig.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.runtimeconfig.dev.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.pdb
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csproj.CoreCompileInputs.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.dll
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.pdb
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.genruntimeconfig.cache
