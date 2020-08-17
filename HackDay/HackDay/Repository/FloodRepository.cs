@@ -19,14 +19,14 @@ namespace HackDay.Repository
             _clientFactory = clientFactory;
         }
 
-        public async Task<Flood> GetFloodAsync(FloodViewModel floodModel)
+        public async Task<Flood> GetFloodAsync()
         {
             var flood = new Flood();
 
             var client = _clientFactory.CreateClient();
 
             var response = await client.GetAsync(
-                $"http://environment.data.gov.uk/flood-monitoring/id/floods?lat={floodModel.Latitude}&long={floodModel.Longitude}&dist={floodModel.Distance}");
+                $"http://environment.data.gov.uk/flood-monitoring/id/floods?lat=52.267136&long=-1.467522&dist=12");
 
             if (response.IsSuccessStatusCode)
             {

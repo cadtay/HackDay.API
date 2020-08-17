@@ -19,9 +19,9 @@ namespace HackDay.Controllers
             _floodRepository = floodRepository;
         }
         [HttpGet("flood")]
-        public async Task<IActionResult> Index(FloodViewModel floodModel)
+        public async Task<IActionResult> Index()
         {
-            var floodAsync = await _floodRepository.GetFloodAsync(floodModel);
+            var floodAsync = await _floodRepository.GetFloodAsync();
 
             if (floodAsync != null)
             {

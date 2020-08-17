@@ -53,6 +53,7 @@ namespace HackDay
             services.AddScoped<IStreetLevelCrimesRepo, CallStreetLevelCrimeApiRepo>();
           
             services.AddScoped<IFloodRepository, FloodRepository>();
+            services.AddScoped<IStopSearchRepository, StopSearchRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

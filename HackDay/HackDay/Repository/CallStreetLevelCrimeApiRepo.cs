@@ -42,10 +42,8 @@ namespace HackDay.Repository
 
                 return _streetLevelCrimes;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public async Task<StreetLevelCrimes[]> GetAllStreetLevelCrimesByLocationAndDate()
@@ -61,10 +59,8 @@ namespace HackDay.Repository
 
                 return _streetLevelCrimes;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
         public async Task<StreetLevelCrimes> GetStreetLevelCrimeById(int id)
@@ -86,10 +82,8 @@ namespace HackDay.Repository
                 }
                 return null;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
 
 
@@ -107,10 +101,8 @@ namespace HackDay.Repository
 
                 return _streetLevelCrimeCategories;
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
         }
     }
 }
