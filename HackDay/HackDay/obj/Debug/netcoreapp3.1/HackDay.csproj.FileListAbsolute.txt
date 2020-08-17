@@ -1,0 +1,15 @@
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\HackDay.exe
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csprojAssemblyReference.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.AssemblyInfoInputs.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.AssemblyInfo.cs
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.RazorTargetAssemblyInfo.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\staticwebassets\HackDay.StaticWebAssets.Manifest.cache
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\staticwebassets\HackDay.StaticWebAssets.xml
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Repos\HackDay.API\HackDay\HackDay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Repos\HackDay.API\HackDay\HackDay\obj\Debug\netcoreapp3.1\HackDay.csproj.CopyComplete
